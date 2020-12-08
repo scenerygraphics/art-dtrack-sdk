@@ -1,4 +1,4 @@
-/*
+package art;/*
  * DTrackSDK: Java example, A.R.T. GmbH
  *
  * TactileFlystick: Java example using Flystick to control a tactile feedback device

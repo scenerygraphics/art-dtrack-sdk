@@ -1,4 +1,4 @@
-/*
+package art;/*
  * DTrackSDK: Java example, A.R.T. GmbH
  *
  * Communicating: Java example using DTrackSDK to control DTrack2 controller

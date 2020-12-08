@@ -1,3 +1,4 @@
+package art;
 /*
  * DTrackSDK: Java example, A.R.T. GmbH
  *
