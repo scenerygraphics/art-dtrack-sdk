@@ -53,17 +53,31 @@ Please refer to the Javadoc located at ./doc/index.html
 Development with DTrackSDK
 --------------------------
 
-Create a new project using the DTrackSDK:
+In order to use this mavenized version of [the original SDK](https://github.com/ar-tracking/DTrackSDK-Java) in your project, add the
+jitpack repository to the repositories section of your `pom.xml`:
 
-In an IDE:
-  - add 'DTrackSDK.jar' to Java build path of the project in your IDE:
-    - e.g. Eclipse: Right click on Project -> Properties -> Java Build Path -> Libraries -> Add External JARs...
+```xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+```
 
-Or alternatively in command line or terminal:
-  - use 'javac <file-to-compile.java> -extdirs <external-dir-of-DTrackSDK.jar>' 
-     or 'javac <file-to-compile.java> -sourcepath <sourcepath-of-DTrackSDK.jar>' to compile your .java file
-  - on Linux: use 'java -cp ".:./<classpath-to-DTrackSDK.jar>" <class-to-run>' to run your application
-  - on Windows: use 'java -cp ".;.\<classpath-to-DTrackSDK.jar>" <class-to-run>' to run your application
+After, you can add a dependency on the package as:
+
+```xml
+<dependency>
+  <groupId>graphics.scenery</groupId>
+  <artifactId>art-dtrack-sdk</artifactId>
+  <version>2.6.0</version>
+</dependency>
+```
+
+Alternatively, any commit hash (such as 18b4a12) can be used in the
+`<version>` tag. For more information how to this package with other package
+managers, see [the documentation at jitpack.io](https://jitpack.io#scenerygraphics/art-dtrack-sdk)
 
 
 Company details
